@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 public class Main {
     public static void main(String[] args) {
         Property allProperty = PropertiesUtil.getAllProperty();
-        Collection<Car> cars = CarFactory.newCars(allProperty,10);
+        Collection<Car> cars = CarFactory.newCars(allProperty, 10);
         ExecutorService executorService = Executors.newScheduledThreadPool(cars.size());
         for (Car car : cars) {
             executorService.submit(car);

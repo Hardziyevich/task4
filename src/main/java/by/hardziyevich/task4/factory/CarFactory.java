@@ -11,7 +11,7 @@ public class CarFactory {
     private CarFactory() {
     }
 
-    public static Collection<Car> newCars(Property property, int size){
+    public static Collection<Car> newCars(Property property, int size) {
         Collection<Car> cars = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             int random = (int) (Math.random() * 3 + 1);

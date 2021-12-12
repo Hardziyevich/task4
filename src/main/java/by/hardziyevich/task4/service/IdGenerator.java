@@ -4,7 +4,8 @@ public class IdGenerator {
 
     private static long id;
 
-    private IdGenerator() {}
+    private IdGenerator() {
+    }
 
     public static long generateId() {
         return id++;
